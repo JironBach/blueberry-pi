@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title><%= @title.nil? ? 'ブルーベリー・パイ' : @title %></title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => false %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => false %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<a name="top" id="top"></a>
+
+  <div id="header">
+  <div id="headerArea">
+    <div class="header_txt"><h1>オンラインプログラミング教室　ブルーベリー・パイ</h1></div>
+    <div class="header_logo"><%= link_to image_tag("site-logo.gif", alt: "ブルーベリー・パイ", width: "271", height: "50"), 'http://www.blueberry-pi.xyz' %></a></div>
+
+    <div id="gnavi">
+      <ul id="globalnavi">
+      <li><%= link_to(image_tag("gnavi_01.jpg", alt: "TOP", width: "156", height: "43"), controller: :index, action: :index) %></li>
+      <li><%= link_to(image_tag("gnavi_02.jpg", alt: "About Site", width: "156", height: "43"), about_path) %></li>
+      </ul>
+    </div>
+    <!-- end div#gnavi -->
+
+  </div><!-- end div#headerArea -->
+  </div><!-- end div#header -->
+
+  <%= yield %>
+
+  <div id="footer">
+  <div id="footerArea" class="floatwrap">
+
+    <div class="footer_logo">
+    <div class="footer_elogo">
+    <h6><%= link_to image_tag("footer_elogo.jpg", alt: "ブルーベリー・パイロゴ", width: "72", height: "66"), "http://www.sukimajapan.com", target: "_blank" %></a></h6>
+    </div>
+    <div class="footer_corp">
+    <h6><%= image_tag("footer_logo.jpg", alt: "090-8508-8128", width: "150", height: "20") %></h6>
+      <p>〒215-0018<br>
+        神奈川県川崎市麻生区王禅寺東4-20-1</p>
+    </div>
+    </div>
+
+    <div class="footer_navi">
+      <ul>
+      <li>・<%= link_to 'ブルーベリー・パイとは', about_path %></li>
+      <li>・<%= link_to '運営会社', corporate_path %></li>
+      <li>・<%= link_to 'サイトマップ', sitemap_path %></li>
+      <li>・<%= link_to 'プライバシーポリシー', privacy_path %></li>
+      <li>・<%= link_to 'お問い合わせ', contact_path %></li>
+      </ul>
+    </div>
+
+  <div class="footer_copy">Copyright (C) 2016 <%= link_to 'ブルーベリー・パイ', "http://www.blueberry-pi.xyz" %> All Rights Reserved.</div>
+
+  </div><!-- end div#footerArea -->
+  </div><!-- end div#footer -->
+
+<!-- start google-analytics -->
+
+<!-- end google-analytics -->
+</body>
+</html>

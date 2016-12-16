@@ -1,0 +1,43 @@
+<div id="content" class="floatwrap">
+<div id="contentArea" class="floatwrap">
+
+  <%= render partial: 'layouts/side' %>
+
+  <div id="main">
+  <div class="main_header"></div>
+
+    <article id="post-8" class="post-8 page type-page status-publish hentry box-middle post">
+
+
+    <h2>ルームシェア東京　無料メールマガジン</h2>
+
+    <%= form_for @mailmagazine, url: {action: :post_mailmagazine} do |f| %>
+
+      <div id="input-hidden"><!-- フォーム用 hidden データ -->
+        <%= f.hidden_field :email %>
+      </div>
+
+      <table border="0" cellpadding="0" cellspacing="0" class="form">
+
+        <tr>
+          <th>メールアドレス<span class="red">【必須】</span></th>
+          <td>
+            <%= @mailmagazine.email %>
+          </td>
+        </tr>
+
+      </table>
+
+      <div class="form_btn">
+        <input type="image" src="/assets/submit_btn.jpg" onMouseOver="this.src='/assets/submit_btn_o.jpg'" onMouseOut="this.src='/assets/submit_btn.jpg'" class="submit">
+      </div>
+
+    <% end %>
+
+    </article>
+
+  <div class="main_footer"></div>
+  </div><!-- end div#main -->
+
+</div><!-- end div#contentArea -->
+</div><!-- end div#content -->

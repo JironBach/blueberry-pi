@@ -1,0 +1,66 @@
+<div id="content" class="floatwrap">
+<div id="contentArea" class="floatwrap">
+
+  <%= render partial: 'layouts/side' %>
+
+  <div id="main">
+  <div class="main_header"></div>
+
+    <article id="post-8" class="post-8 page type-page status-publish hentry box-middle post">
+
+
+    <h2>お問い合わせ</h2>
+
+
+    <%= form_for @contact, url: {action: :confirm_contact}, :html => { :multipart => true } do |f| %>
+
+
+      <table border="0" cellpadding="0" cellspacing="0" class="form">
+
+        <tr>
+          <th>会社名</th>
+          <td>
+            <%= f.text_field :corp_name, size: "16", maxlength: "13" %>
+          </td>
+        </tr>
+        <tr>  </tr>
+        <tr>
+          <th>お名前<span class="red">【必須】</span></th>
+          <td>
+            <%= f.text_field :name, size: "12", maxlength: "24" %>
+            <div class="error"><%= @contact.errors.messages[:name][0] if !@contact.errors.messages[:name].blank? %></div>
+          </td>
+        </tr>
+
+        <tr>
+          <th>メールアドレス<span class="red">【必須】</span></th>
+          <td>
+            <%= f.text_field :email, size: "36", maxlength: "80" %>
+            <div class="error"><%= @contact.errors.messages[:email][0] if !@contact.errors.messages[:email].blank? %></div>
+          </td>
+        </tr>
+
+        <tr>
+          <th>お問い合わせ内容<span class="red">【必須】</span></th>
+          <td>
+            <%= f.text_area :detail, size: "16x4", maxlength: "20" %></textarea>
+            <div class="error"><%= @contact.errors.messages[:detail][0] if !@contact.errors.messages[:detail].blank? %></div>
+          </td>
+        </tr>
+      </table>
+
+      <div class="form_btn"><input type="image" src="/assets/confirm_btn.jpg" onMouseOver="this.src='/assets/confirm_btn_o.jpg'" onMouseOut="this.src='/assets/confirm_btn.jpg'" class="submit" value="送信確認画面へ">
+      </div>
+
+    <% end %>
+
+
+    <div class="main_footer"></div>
+    </div><!-- end div#main -->
+
+
+  </div><!-- end div#contentArea -->
+  </div><!-- end div#content -->
+
+</div>
+</div>

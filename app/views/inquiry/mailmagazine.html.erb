@@ -1,0 +1,49 @@
+<div id="content" class="floatwrap">
+<div id="contentArea" class="floatwrap">
+
+  <%= render partial: 'layouts/side' %>
+
+  <div id="main">
+  <div class="main_header"></div>
+
+    <article id="post-8" class="post-8 page type-page status-publish hentry box-middle post">
+
+
+    <h2>ルームシェア東京　無料メールマガジンについて</h2>
+
+    <p>ルームシェア東京のメルマガでは、サイト掲載よりも早く新着物件をお届けします。<br>また、サイトには掲示できなかったマル秘情報や各種キャンペーンなど、会員様だけに送る耳寄り情報なども配信します。</p>
+
+    <p>ぜひご購読ください！</p>
+
+    <p>登録は下記のフォームにご入力をお願いします。</p>
+
+    <%= form_for @mailmagazine, url: {action: :confirm_mailmagazine}, :html => { :multipart => true } do |f| %>
+
+
+      <table border="0" cellpadding="0" cellspacing="0" class="form">
+
+        <tr>
+          <th>メールアドレス<span class="red">【必須】</span></th>
+          <td>
+            <%= f.text_field :email, size: "36", maxlength: "80" %>
+            <div class="error"><%= @mailmagazine.errors.messages[:email][0] if !@mailmagazine.errors.messages[:email].blank? %></div>
+          </td>
+        </tr>
+
+      </table>
+
+      <div class="form_btn"><input type="image" src="/assets/confirm_btn.jpg" onMouseOver="this.src='/assets/confirm_btn_o.jpg'" onMouseOut="this.src='/assets/confirm_btn.jpg'" class="submit" value="送信確認画面へ">
+      </div>
+
+    <% end %>
+
+
+    <div class="main_footer"></div>
+    </div><!-- end div#main -->
+
+
+  </div><!-- end div#contentArea -->
+  </div><!-- end div#content -->
+
+</div>
+</div>
