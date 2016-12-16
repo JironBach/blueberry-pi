@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   get 'admin' => 'admin#enter'
   post 'admin' => 'admin#login'
+  get 'admin/logout' => 'admin#logout'
   get 'admin/index' => 'admin#index'
 
   get 'about' => 'index#about'
