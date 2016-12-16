@@ -1,0 +1,14 @@
+development:
+  encrypt:
+    secure: 'b63c2b1a091blue51668233791fc8c4afecf227c4a956bd2edeberry6268316a7119fe862b46pid4352ae5df09ce0bdea0a160bad7630cc7e4e7e29eb8106a2c'
+    cipher: 'aes-256-cbc'
+
+test:
+  encrypt:
+    secure: 'b63c2b1a091blue51668233791fc8c4afecf227c4a956bd2edeberry6268316a7119fe862b46pid4352ae5df09ce0bdea0a160bad7630cc7e4e7e29eb8106a2c'
+    cipher: 'aes-256-cbc'
+
+production:
+  encrypt:
+    secure: 'b63c2b1a091blue51668233791fc8c4afecf227c4a956bd2edeberry6268316a7119fe862b46pid4352ae5df09ce0bdea0a160bad7630cc7e4e7e29eb8106a2c'
+    cipher: 'aes-256-cbc'
