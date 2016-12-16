@@ -1,7 +1,4 @@
-class User < ActiveRecord::Base
-  # gmail
-  validates :mail_account, :password, presence: true, uniqueness: { allow_blank: true }
-
+class Admin < ActiveRecord::Base
   before_save :encrypt_password
 
   def encrypt_password

@@ -3,10 +3,10 @@ class CreateUsers < ActiveRecord::Migration
     create_table :users do |t|
       t.timestamps null: false
 
-      t.string :gmail, null: false
+      t.string :mail_account, null: false
       t.string :first_name
       t.string :last_name
-      t.sting :knick_name
+      t.string :knick_name
       t.string :password, null: false
       t.references :school_registered
       t.integer :former_registered
