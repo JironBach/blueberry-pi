@@ -26,6 +26,9 @@
   </div><!-- end div#headerArea -->
   </div><!-- end div#header -->
 
+  <% flash.each do |key, value| %>
+    <%= content_tag(:div, value, class: "#{key}") %>
+  <% end %>
   <%= yield %>
 
   <div id="footer">

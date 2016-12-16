@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
   root 'index#index'
+
+  get 'admin' => 'admin#enter'
+  post 'admin' => 'admin#login'
+  get 'admin/index' => 'admin#index'
+
   get 'about' => 'index#about'
   get 'corporate' => 'index#corporate'
   get 'sitemap' => 'index#sitemap'
