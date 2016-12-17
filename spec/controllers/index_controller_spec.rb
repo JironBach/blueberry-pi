@@ -7,28 +7,24 @@ RSpec.describe IndexController, type: :controller do
       expect(response).to render_template(:index)
     end
   end
-
   describe 'GET #about' do
     it "renders the :about template" do
       get :about
       expect(response).to render_template(:about)
     end
   end
-
   describe 'GET #corporate' do
     it "renders the :corporate template" do
       get :corporate
       expect(response).to render_template(:corporate)
     end
   end
-
   describe 'GET #sitemap' do
     it "renders the :sitemap template" do
       get :sitemap
       expect(response).to render_template(:sitemap)
     end
   end
-
   describe 'GET #privacy' do
     it "renders the :privacy template" do
       get :privacy

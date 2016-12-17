@@ -1,5 +1,5 @@
 FactoryGirl.define do
   factory :admin do
-    password = 'TestForBlueberryPi'
+    password 'TestForBlueberryPi'
   end
 end
