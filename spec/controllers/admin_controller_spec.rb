@@ -29,6 +29,7 @@ RSpec.describe AdminController, type: :controller do
     end
   end
   describe 'POST #admin' do
+    let(:admin) {FactoryGirl.create(:admin)}
     it '正しいパスワードはindexにリダイレクト' do
       post :login, password: 'TestForBlueberryPi'
       expect(response).to redirect_to admin_index_path
