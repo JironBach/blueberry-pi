@@ -9,7 +9,7 @@ class AdminController < ApplicationController
 
   def login
     admin = Admin.first
-    result = admin.nil? nil : admin.verify_password(params[:password])
+    result = admin.nil? ? nil : admin.verify_password(params[:password])
     if result
       session['user'] = nil
       session['admin'] = admin
