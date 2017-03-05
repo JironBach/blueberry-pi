@@ -14,25 +14,25 @@
 ActiveRecord::Schema.define(version: 20161216015443) do
 
   create_table "admins", force: :cascade do |t|
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
-    t.string   "password",   limit: 255, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string   "password",   null: false
   end
 
   create_table "users", force: :cascade do |t|
-    t.datetime "created_at",                       null: false
-    t.datetime "updated_at",                       null: false
-    t.string   "mail_account",         limit: 255, null: false
-    t.string   "first_name",           limit: 255
-    t.string   "last_name",            limit: 255
-    t.string   "knick_name",           limit: 255
-    t.string   "password",             limit: 255, null: false
-    t.integer  "school_registered_id", limit: 4
-    t.integer  "former_registered",    limit: 4
-    t.integer  "class_registered",     limit: 4
-    t.integer  "school_current_id",    limit: 4
-    t.integer  "former_current",       limit: 4
-    t.integer  "class_current",        limit: 4
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
+    t.string   "mail_account",         null: false
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "knick_name"
+    t.string   "password",             null: false
+    t.integer  "school_registered_id"
+    t.integer  "former_registered"
+    t.integer  "class_registered"
+    t.integer  "school_current_id"
+    t.integer  "former_current"
+    t.integer  "class_current"
   end
 
 end

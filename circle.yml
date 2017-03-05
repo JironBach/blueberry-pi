@@ -1,0 +1,6 @@
+deployment:
+  staging:
+    branch: develop
+    heroku:
+      appname: blueberry-pi
+
