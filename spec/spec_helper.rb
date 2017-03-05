@@ -94,3 +94,10 @@ RSpec.configure do |config|
   #ファクトリを簡単に呼び出せるように、FactoryGirlの構文をインクルードする
   config.include FactoryGirl::Syntax::Methods
 end
+
+ENV["RAILS_ENV"] ||= 'test'
+require File.expand_path("../../config/environment", __FILE__)
+require 'rspec/rails'
+require 'rspec/autorun'
+require 'factory_girl'
+
