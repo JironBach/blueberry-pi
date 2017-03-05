@@ -101,6 +101,7 @@ GEM
     multi_json (1.12.1)
     nokogiri (1.7.0.1)
       mini_portile2 (~> 2.1.0)
+    pg (0.18.1)
     public_suffix (2.0.5)
     puma (3.6.0)
     rack (1.6.5)
@@ -221,6 +222,7 @@ DEPENDENCIES
   jquery-rails
   launchy
   log-monitor
+  pg
   puma
   rails (~> 4.2.7)
   rails_12factor
