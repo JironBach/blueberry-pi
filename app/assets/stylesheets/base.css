@@ -26,7 +26,7 @@ div#headerArea{
   margin:0 auto;
   width:1020px;
   height:170px;
-  background:url("/assets/images/header_bg.jpg") no-repeat;
+  background:url("/images/header_bg.jpg") no-repeat;
 
 }
 
@@ -148,7 +148,7 @@ div#contentArea{
   padding:0;
   margin:0 auto;
   width:990px;
-  background:url("/assets/images/contents_bg.jpg") repeat-y;
+  background:url("/images/contents_bg.jpg") repeat-y;
 
 }
 
@@ -159,7 +159,7 @@ div#main{
   margin: 0 auto;
   width: 740px;
   font-size: 108%;
-  background:url("/assets/images/main_bg.jpg") repeat-y;
+  background:url("/images/main_bg.jpg") repeat-y;
   color: #4C4C4C;
 
 }
@@ -168,7 +168,7 @@ div.main_header {
   clear: both;
   margin: 0;
   padding: 0;
-  background: url("/assets/images/main_head.jpg") no-repeat;
+  background: url("/images/main_head.jpg") no-repeat;
   height: 12px;
 
 }
@@ -177,7 +177,7 @@ div.main_footer {
   clear: both;
   margin: 0;
   padding: 0;
-  background: url("/assets/images/main_foot.jpg") no-repeat;
+  background: url("/images/main_foot.jpg") no-repeat;
   height: 12px;
 
 }
@@ -202,7 +202,7 @@ div.main_spec_gr{
   margin: 0;
   width: 356px;
   height: 240px;
-  background: url("/assets/images/main_boad_gr.jpg") no-repeat;
+  background: url("/images/main_boad_gr.jpg") no-repeat;
 }
 
 div.main_spec_or{
@@ -211,7 +211,7 @@ div.main_spec_or{
   margin: 0;
   width: 356px;
   height: 240px;
-  background: url("/assets/images/main_boad_or.jpg") no-repeat;
+  background: url("/images/main_boad_or.jpg") no-repeat;
 }
 
 div.main_spec_left{
@@ -304,7 +304,7 @@ div#main h2{
   padding: 0 0 0 15px;
   margin: 0 0 10px 15px;
   color: #FFFFFF;
-  background: url("/assets/images/h2.jpg") no-repeat;
+  background: url("/images/h2.jpg") no-repeat;
   font-size: 123.1%;
   font-weight:bold;
   line-height: 40px;
@@ -315,7 +315,7 @@ div#main h3{
   padding: 0 0 0 10px;
   margin: 0 0 10px 0;
   color: #FFFFFF;
-  background: url("/assets/images/h3.jpg") no-repeat;
+  background: url("/images/h3.jpg") no-repeat;
   font-size: 108%;
   font-weight:bold;
   line-height: 35px;
@@ -336,7 +336,7 @@ div.check_or{
   padding: 0 0 0 46px;
   margin: 0 0 10px 15px;
   color: #660000;
-  background: url("/assets/images/check_or.gif") no-repeat;
+  background: url("/images/check_or.gif") no-repeat;
   font-size: 123.1%;
   font-weight:bold;
   line-height: 40px;
@@ -390,7 +390,7 @@ div#side ul.side_list li {
   margin: 0;
   padding: 0;
   font-size: 85%;
-  background: url("/assets/images/navi_li_bg.jpg") no-repeat;
+  background: url("/images/navi_li_bg.jpg") no-repeat;
   line-height: 47px;
   text-align: center;
 
@@ -400,7 +400,7 @@ div.side_list_footer {
   clear: both;
   margin: 0;
   padding: 0 0 10px 0;
-  background: url("/assets/images/navi_footer.jpg") no-repeat;
+  background: url("/images/navi_footer.jpg") no-repeat;
   height: 5px;
 
 }
@@ -589,7 +589,7 @@ div#foot_link li {
   padding: 0 0 0 20px;
   list-style: none;
   line-height: 20px;
-  background: url("/assets/images/footlink_list.gif") no-repeat;
+  background: url("/images/footlink_list.gif") no-repeat;
 }
 
 /* ===== その他共通要素 ===== */
